@@ -8,15 +8,19 @@
 
 #videoBg{
     position: fixed;
-
-   width: 100%;
-    heigcht: 100hv;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
 }
 .leftPart{
     position: absolute;
     top: 0;
     left: 0;
-    width: 48%;
+    width: 68%;
     height: 100vh;
     background: #284061;
     text-align: center;
@@ -27,21 +31,21 @@
  .rightPart{
     position: absolute;
     background: #BA7C37;
-    width: 66%;
+    width: 49%;
     height: 100vh;
     opacity: .6;
-    clip-path: polygon(22% 0%, 100% 0%, 100% 100%,7.2% 100%);
+    clip-path: polygon(36% 0%, 100% 0%, 100% 100%,8.2% 100%);
     float: right;
     top: 0;
     right: 5px;
 
 }
 #l-content{
-    width: 60%;
+    width: 69%;
     height: 64vh;
     float: left;
     position: absolute;
-    top: 200px;
+    top: 75px;
     left: 53px;
     text-align: left;
 
@@ -103,8 +107,5 @@ span{
     margin-top: 10px;
 
 }
-@media only screen and (min-width: 768px) {
-    .body {
-        background: blue;
-    }
+
 
